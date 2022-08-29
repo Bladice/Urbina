@@ -1,0 +1,276 @@
+.clap {
+    margin-right: 8px;
+    position: relative
+}
+
+.clap--clapped {
+    color: #4b8c2a;
+    border: 1px solid #4b8c2a
+}
+
+.clap--clapped:hover {
+    background: rgba(87,158,50,.05)
+}
+
+.clap--clapped:focus {
+    background: rgba(75,140,42,.05)
+}
+
+.clap--clapped>.clap-img {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/view/clap_green.svg)
+}
+
+.clap-img {
+    width: 20px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 20px;
+    margin-top: -3px;
+    margin-right: 6px
+}
+
+.clap-img,.clap:not(.clap--clapped):hover>.clap-img {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/view/clap.svg)
+}
+
+.view-image__actions-clap {
+    width: 100%;
+    min-height: 37px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.view-image__actions-clap:hover {
+    background-color: hsla(0,0%,100%,.1)
+}
+
+.view-image__actions-clap:active {
+    background-color: hsla(0,0%,100%,.15)
+}
+
+.clap-photo-img {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/clap/clap_outlined_white.svg);
+    width: 22px;
+    height: 24px;
+    background-size: 22px 24px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-right: 8px
+}
+
+.clap-photo-clapped>.clap-photo-img {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/clap/clap_filled_white.svg)
+}
+
+.clap-animation {
+    position: absolute;
+    width: 41px;
+    top: -7px;
+    left: -3px;
+    z-index: 1000
+}
+
+.clap-photo-animation {
+    position: absolute;
+    width: 46px;
+    z-index: 1000;
+    visibility: hidden
+}
+
+@media(max-width: 768px) {
+    .clap-photo-animation {
+        left:16px
+    }
+
+    .clap-photo-text {
+        word-break: break-all;
+        max-width: 85px
+    }
+}
+
+.clap-bubble {
+    position: absolute;
+    background: #ffe337;
+    border-radius: .4em;
+    color: #000;
+    text-align: left;
+    padding: 15px;
+    z-index: 10000;
+    font-weight: 500;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-size: 13px;
+    box-shadow: 1px 1px rgba(0,0,0,.1);
+    max-width: 270px;
+    max-height: 500px
+}
+
+.clap-bubble:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 24px solid transparent;
+    border-bottom-color: #ffe337;
+    border-top: 47px;
+    margin-right: -24px;
+    margin-bottom: -24px;
+    z-index: 5
+}
+
+.bubble-right:after {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 30px;
+    left: -35px
+}
+
+.bubble-left:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: -11px
+}
+
+.clap-bubble>b {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000
+}
+
+.clap-bubble>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 3px;
+    margin-bottom: 0
+}
+
+.clap-bubble__close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2
+}
+
+.clap-bubble__close:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .5
+}
+
+@media(min-width: 550px) {
+    .bubble-right {
+        right:-285px;
+        top: -31px
+    }
+
+    .bubble-right:after {
+        top: 34px
+    }
+}
+
+@media(min-width: 375px) and (max-width:549px) {
+    .clap-bubble {
+        max-width:200px
+    }
+
+    .bubble-right {
+        right: -215px;
+        top: -31px
+    }
+
+    .bubble-right:after {
+        top: 34px
+    }
+}
+
+@media(max-width: 374px) {
+    .clap-bubble {
+        max-width:160px
+    }
+
+    .bubble-right {
+        right: -175px;
+        top: -32px
+    }
+
+    .bubble-right:after {
+        top: 36px
+    }
+}
+
+@media(min-width: 780px) {
+    .bubble-left {
+        left:-293px;
+        top: -17px
+    }
+
+    .bubble-left:after {
+        top: 25px
+    }
+}
+
+@media(min-width: 550px) and (max-width:779px) {
+    .bubble-left {
+        left:-270px;
+        bottom: -30px;
+        width: 250px
+    }
+
+    .bubble-left:after {
+        bottom: 60px;
+        right: -8px
+    }
+}
+
+@media(min-width: 425px) and (max-width:549px) {
+    .bubble-left {
+        left:-220px;
+        bottom: -30px;
+        width: 200px
+    }
+
+    .bubble-left:after {
+        bottom: 60px;
+        right: -8px
+    }
+}
+
+@media(max-width: 424px) {
+    .bubble-left {
+        left:-170px;
+        bottom: -30px;
+        width: 150px
+    }
+
+    .bubble-left:after {
+        bottom: 60px;
+        right: -8px
+    }
+}

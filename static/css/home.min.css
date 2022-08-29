@@ -1,0 +1,935 @@
+#header-main h1 {
+  margin-top: 15px;
+}
+#header-main .btn-link,
+#header-main .btn-profile {
+  color: gray;
+}
+#header-main .btn-profile:hover {
+  color: #4c8c2b;
+  text-decoration: none !important;
+}
+.container-fluid {
+  padding: 0;
+}
+.row-top {
+  margin-top: 60px;
+}
+.img-circle {
+  border-radius: 100px;
+}
+.activity-tooltip {
+  position: absolute;
+  top: 0;
+  left: -1000em;
+  padding: 5px 7px;
+  background: #333;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+}
+.home__main-actions {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.home__main-actions,
+.home__main-actions-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+.home__main-actions-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  max-width: 1138px;
+  height: 100%;
+}
+.home__search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 22px 42px;
+  -webkit-box-flex: 6;
+  -webkit-flex: 6 0 0;
+  -ms-flex: 6 0 0;
+  flex: 6 0 0;
+  background-color: #f4f4f4;
+}
+.home__search > h3 {
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.home__search-explore {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+}
+.home__explore {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.home__create,
+.home__explore {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.home__create {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-flex: 4;
+  -webkit-flex: 4 0 0;
+  -ms-flex: 4 0 0;
+  flex: 4 0 0;
+  padding: 23px 42px;
+  background-color: #e4e4e4;
+}
+.home__create > h3 {
+  color: #2b2b2b;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.home__create-button-big {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b8c2a;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #4b8c2a;
+}
+.home__create-button-big-text {
+  margin-top: 1px;
+  margin-left: 10px;
+}
+.home__create-button-big-icon-circle {
+  background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/upload.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 30px;
+  height: 28px;
+}
+.home__create-button-big:hover {
+  background-color: #4b8c2a;
+  color: #fff;
+  text-decoration: none;
+}
+.home__create-button-big:hover > .home__create-button-big-icon-circle {
+  background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/upload-hover.svg);
+}
+.home__planet {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/planet/sky-desktop.png),
+    url(https://sc.wklcdn.com/wikiloc/assets/styles/images/planet/contour-lines-desktop.svg);
+  background-position: right -1px bottom, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.home__planet-logo {
+  width: 145px;
+  height: 62px;
+  margin: 15px 60px 15px 24px;
+}
+.home__planet-desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #828282;
+  max-width: 350px;
+  margin: 0 26px;
+}
+.home__planet-cta {
+  margin: 22px 0;
+  font-size: 16px;
+  padding: 12px 16px 9px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial,
+    sans-serif;
+}
+@media (max-width: 992px) {
+  .home__planet-title {
+    margin-top: 52px;
+  }
+  .home__planet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/planet/sky-mobile.png),
+      url(https://sc.wklcdn.com/wikiloc/assets/styles/images/planet/contour-lines-mobile.svg);
+  }
+  .home__planet-logo {
+    margin: 20px 60px 20px 24px;
+  }
+  .home__planet-desc {
+    text-align: center;
+  }
+  .home__planet-cta {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .home__main-actions-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .home__create,
+  .home__search {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 100%;
+    padding: 25px 15px;
+  }
+  .home__create {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .home__planet-cta {
+    margin-bottom: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .home__create > h3 {
+    margin: 0 auto 10px 0;
+  }
+  .home__search-explore {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .home__explore {
+    padding: 16px 0 0;
+  }
+  .home__planet-cta {
+    margin-bottom: 105px;
+  }
+}
+.home__login,
+.home__signup {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+#trail-slider-map {
+  width: 100%;
+}
+#trail-slider {
+  position: relative;
+}
+#trail-slider ul.trail-nav {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: left;
+  height: 50px;
+  overflow: hidden;
+  list-style: none;
+}
+#trail-slider ul.trail-nav li {
+  float: left;
+  margin-right: 9px;
+  padding-bottom: 10px;
+}
+#trail-slider ul.trail-nav li.selected {
+  background: transparent url(https://sc.wklcdn.com/images/trail-selected.png)
+    no-repeat bottom;
+  opacity: 0.99;
+}
+#trail-slider ul.trail-nav li#more-activities a {
+  display: block;
+  background: #e4e4e4;
+  text-align: center;
+  font-weight: 700;
+  color: gray;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+}
+#trail-slider ul.trail-nav li#more-activities a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #333;
+}
+#trail-slider div#slides {
+  position: relative;
+  clear: both;
+}
+#trail-slider div#slides #map-logo {
+  position: absolute;
+  bottom: -350px;
+  display: block;
+  width: 62px;
+  height: 24px;
+  background: transparent
+    url(https://sc.wklcdn.com/wikiloc/images/google_white.png) no-repeat bottom;
+}
+#trail-slider div#slides #map-logo-apple {
+  position: absolute;
+  bottom: -350px;
+  display: block;
+  width: 62px;
+  height: 24px;
+  background: transparent
+    url(https://cdn.apple-mapkit.com/mk/5.23.1/images/logos/logo-wordmark-satellite-en-US.svg)
+    no-repeat bottom;
+}
+#trail-slider .mapoverlay {
+  position: absolute;
+  bottom: 0;
+  height: 350px;
+  width: 20%;
+  display: none;
+}
+#trail-slider .mapleft {
+  left: 0;
+  background: linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.9));
+}
+#trail-slider .mapright {
+  right: 0;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.9));
+}
+#trail-slider #imagemap {
+  height: 350px;
+  background-color: #000;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+div.arrow {
+  position: absolute;
+  bottom: -210px;
+  background: transparent url(https://sc.wklcdn.com/images/arrows-bigger.png)
+    no-repeat bottom;
+  width: 27px;
+  height: 40px;
+  z-index: 10;
+  cursor: pointer;
+}
+div.arrow.previous {
+  background-position: 0 0;
+  left: 0;
+}
+div.arrow.next {
+  background-position: -27px 0;
+  right: 0;
+}
+div#map_canvas,
+div#map_canvas_hide {
+  width: 100%;
+  height: 350px;
+}
+div#trail-info {
+  background: #2b2b2b;
+  font-size: 13px;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+div#trail-info a {
+  color: #fff;
+}
+div#trail-info div.trail-main {
+  padding: 10px;
+  float: left;
+  overflow: hidden;
+}
+div#trail-info span#trail-activity {
+  display: block;
+}
+div#trail-info h3 {
+  font-size: 21px;
+  font-weight: 600;
+  display: inline;
+}
+div#trail-info span#trail-meta {
+  color: gray;
+}
+div#trail-info span#trail-meta em {
+  color: #fff;
+}
+div#trail-photos {
+  position: absolute;
+  bottom: -330px;
+  right: 20px;
+  width: 270px;
+}
+div#trail-photos a {
+  float: left;
+  margin: 0 0 5px 5px;
+  display: block;
+  background: hsla(0, 0%, 100%, 0.7);
+  padding: 2px;
+  border-radius: 2px;
+}
+div.trail-user {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  z-index: 2;
+  background-color: #2b2b2b;
+}
+div.trail-user a#trail-user-photo {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+div.trail-user a#trail-user-photo img {
+  width: 40px;
+  border-radius: 2px;
+}
+div.trail-user span.user-info {
+  display: block;
+  float: left;
+  color: gray;
+  padding-right: 10px;
+}
+div.trail-user span.user-info a#trail-user-name {
+  display: block;
+  margin-top: 3px;
+  font-weight: 700;
+  color: #fff;
+}
+#trail-counter {
+  padding: 20px 0;
+  border-left: none;
+  border-right: none;
+  background: #4c8c2b;
+}
+#trail-counter #bigintro {
+  font-size: 21px;
+  line-height: 1.4em;
+  border-bottom: 1px dashed #e4e4e4;
+  border: none;
+  color: #fff;
+}
+#trail-counter #bigintro strong {
+  color: #fff;
+}
+#trail-counter #bigintro a.signup-link {
+  text-decoration: underline;
+  font-weight: 700;
+}
+#trail-counter .counter1 {
+  width: 485px;
+  height: 90px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  border: 5px solid #b7d1aa;
+  border-top: 10px solid #b7d1aa;
+  border-bottom: 10px solid #b7d1aa;
+  overflow: hidden;
+  position: relative;
+  background-color: #b7d1aa;
+  border-radius: 3px;
+}
+.title-h1 {
+  font-size: 25pt;
+}
+.title-h2 {
+  font-size: 20pt;
+}
+}
+div.mobile-app {
+  display: table;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  background: #ededed
+    url(https://sc.wklcdn.com/wikiloc/assets/styles/images/home/background-white-seamless-horizontal.png)
+    repeat-x;
+}
+div.mobile-app-row {
+  display: table-row;
+}
+div.mobile-app-column {
+  display: table-cell;
+  margin-top: 12px;
+  padding-top: 25px;
+}
+div.mobile-app h2 {
+  padding-top: 20px;
+  color: #333;
+  font-weight: 700;
+}
+div.mobile-app p {
+  padding-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  line-height: 1.3em;
+}
+div.mobile-app div {
+  line-height: 1.3em;
+  padding-bottom: 5px;
+}
+div.mobile-app img {
+  padding-top: 20px;
+}
+div.mobile-app a.btn {
+  position: absolute;
+  bottom: -50px;
+  right: 40px;
+}
+div.mobile-app ul {
+  margin-top: 25px;
+}
+div.mobile-app ul li {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial,
+    sans-serif;
+  font-size: 12pt;
+}
+#premium a {
+  display: block;
+  color: #333;
+  height: 255px;
+  margin-bottom: 10px;
+  position: relative;
+  background: #ededed
+    url(https://sc.wklcdn.com/wikiloc/assets/styles/images/home/background-white-seamless-horizontal.png)
+    repeat-x;
+  background-size: cover;
+  border-radius: 4px;
+}
+#premium a:hover {
+  text-decoration: none;
+}
+#premium a span {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #4c8c2b;
+  border-radius: 0 0 3px 3px;
+  text-align: center;
+}
+.wrap-title {
+  height: 50px;
+}
+.wrap-title,
+.wrap-title-with-images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.wrap-title-with-images {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#google-earth p a {
+  display: block;
+  height: 255px;
+  background: url(https://sc.wklcdn.com/images/google-earth2.jpg) no-repeat 0;
+  color: gray;
+  padding: 20px 20px 100px;
+  border-radius: 4px;
+}
+#google-earth p a:hover {
+  text-decoration: none;
+}
+#google-earth strong {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+#geopromotion a {
+  display: block;
+  color: #333;
+  height: 255px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 4px;
+  background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/home/wikiloc-para-empresas-poi.png)
+    no-repeat right 33px;
+  background-size: cover;
+}
+#geopromotion a:hover {
+  text-decoration: none;
+}
+#geopromotion a span.title {
+  display: block;
+  padding: 10px;
+  font-weight: 700;
+  background: #d5d5d5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  text-transform: uppercase;
+}
+#geopromotion a span.text {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  line-height: 1.3em;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px #000;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.3);
+}
+#tourism a {
+  display: block;
+  color: #fff;
+  height: 255px;
+  margin-bottom: 10px;
+  position: relative;
+  background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/home/org.jpg)
+    no-repeat;
+  border-radius: 4px;
+  background-size: cover;
+}
+#tourism a:hover {
+  text-decoration: none;
+}
+#tourism a span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 100%;
+}
+#tourism a span strong {
+  display: block;
+  line-height: 1.3em;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3.country-links {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+div.country-links ul li {
+  list-style: none;
+}
+.bigger {
+  font-size: 1.1rem;
+}
+.join-us,
+.join-us:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  #header-main h1 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  #header-main a.navbar-brand {
+    margin-left: 0 !important;
+  }
+  div.access-wrapper {
+    position: absolute;
+  }
+  div.access-wrapper div.access-links {
+    float: right !important;
+  }
+  #section-grey div#world-map {
+    float: right;
+    padding: 15px 0;
+  }
+  #trail-slider {
+    padding: 0;
+  }
+  div.mobile-app .btn {
+    margin: 0 auto;
+  }
+  #header-main a.navbar-brand {
+    float: left;
+    margin: 15px 0;
+    background-image: url("../image/PUrbina.png");
+    /*background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_md.png?v=3.0);*/
+    background-size: 157px 34px;
+    width: 157px;
+    height: 34px;
+    display: block;
+    text-indent: -9999px;
+  }
+  div.mobile-app a.btn {
+    position: static;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #trail-counter #bigintro p {
+    margin-top: 20px;
+  }
+  #trail-slider {
+    padding: 0;
+  }
+  #header-main a.navbar-brand {
+    background-image: url("../image/PUrbinal.jpg");
+    /*background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_lg.png?v=3.0);*/
+    background-size: 249px 54px;
+    width: 249px;
+    height: 54px;
+  }
+  div.mobile-app a.btn {
+    position: static;
+  }
+  .access-wrapper {
+    margin-left: 15px;
+  }
+  .sm-mln {
+    margin-left: -15px;
+  }
+  #premium a {
+    background: #ededed
+      url(https://sc.wklcdn.com/wikiloc/assets/styles/images/home/background-white-seamless-horizontal.png)
+      repeat-x;
+    background-size: 220px 255px;
+    width: auto;
+    height: 255px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header-main a.navbar-brand {
+    background-image: url("../image/PUrbinal.jpg");
+    /*background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_lg.png?v=3.0);*/
+    background-size: 249px 54px;
+    width: 249px;
+    height: 54px;
+  }
+  div.mobile-app a.btn {
+    position: absolute;
+    bottom: -50px;
+    right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #header-main a.navbar-brand {
+    background-image: url("../image/PUrbinal.jpg");
+    /*background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_lg.png?v=3.0);*/
+    background-size: 249px 54px;
+    width: 249px;
+    height: 54px;
+  }
+  #trail-slider .mapoverlay {
+    display: block;
+    width: 8%;
+  }
+  div.mobile-app a.btn {
+    position: absolute;
+    bottom: -70px;
+    right: 40px;
+  }
+}
+@media (min-width: 1800px) {
+  #trail-slider .mapoverlay {
+    display: block;
+    width: 20%;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  #header-main a.navbar-brand {
+    background: url("../image/PUrbinal.jpg");
+    /*background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_lg@2x.png?v=3.0);*/
+    background-size: 249px 54px;
+    width: 249px;
+    height: 54px !important;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+  (max-width: 767px) and (min-resolution: 192dpi) {
+  #header-main a.navbar-brand {
+    background: url("../image/PUrbinal.jpg")no-repeat;
+    /*background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_md@2x.png?v=3.0)
+      no-repeat;*/
+    background-size: 157px 34px;
+    height: 34px !important;
+  }
+}
+.text {
+  font-size: 15pt;
+}
+.space-1m {
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+}
+.round-corner {
+  border-radius: 4px;
+  border: 1px solid #ededed;
+}
+.premium-box {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+@media (min-width: 576px) {
+  div.mobile-app-column {
+    padding-top: 45px;
+  }
+  .premium-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 768px) {
+  .premium-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .premium-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .premium-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .explore__modal {
+    left: -300px;
+  }
+  .explore__inner:before {
+    left: 320px;
+  }
+  .explore__inner:after {
+    left: 319px;
+  }
+}
+.christmas_logo {
+  background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/logo/wikiloc_2020_christmas_logo.svg) !important;
+}

@@ -1,0 +1,973 @@
+.wlbutton {
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 6px 22px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    color: #fff;
+    text-decoration: none
+}
+
+.wlbutton:hover {
+    cursor: pointer
+}
+
+.wlbutton:focus,.wlbutton:hover {
+    text-decoration: none
+}
+
+.wlbutton--xs {
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 6px 8px
+}
+
+.wlbutton--sm {
+    height: 32px
+}
+
+.wlbutton--md {
+    height: 36px
+}
+
+.wlbutton--lg {
+    height: 40px
+}
+
+.wklbutton--pri-green {
+    background: #4b8c2a;
+    color: #fff;
+    border: 3px solid #4b8c2a
+}
+
+.wklbutton--pri-green:active,.wklbutton--pri-green:focus,.wklbutton--pri-green:hover {
+    background-color: #447e27;
+    border-color: #447e27;
+    color: #fff
+}
+
+.wlbutton--sec-green {
+    color: #4b8c2a;
+    background: #fff;
+    border: 3px solid #4b8c2a;
+    box-sizing: border-box
+}
+
+.wlbutton--sec-green.wlbutton--xs {
+    border: 1px solid #4b8c2a
+}
+
+.wlbutton--sec-green:hover {
+    color: #4b8c2a;
+    background: rgba(87,158,50,.05);
+    border: 1px solid #4b8c2a
+}
+
+.wlbutton--sec-green:focus {
+    color: #4b8c2a;
+    background: rgba(75,140,42,.05);
+    border: 1px solid #4b8c2a
+}
+
+.checkbox-wikiloc {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.checkbox-wikiloc>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.checkbox-wikiloc__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #eaeaea
+}
+
+.checkbox-wikiloc__mark--big {
+    height: 25px;
+    width: 25px
+}
+
+.checkbox-wikiloc:hover>input~.checkbox-wikiloc__mark {
+    background-color: #ccc
+}
+
+.checkbox-wikiloc>input:checked~.checkbox-wikiloc__mark {
+    background-color: #4b8c2a
+}
+
+.checkbox-wikiloc__mark:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.checkbox-wikiloc>input:checked~.checkbox-wikiloc__mark:after {
+    display: block
+}
+
+.checkbox-wikiloc>.checkbox-wikiloc__mark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.checkbox-wikiloc>.checkbox-wikiloc__mark--big:after {
+    left: 8px;
+    top: 5px;
+    width: 6px;
+    height: 11px
+}
+
+.spinner__round {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #4b8c2a;
+    border-radius: 50%;
+    border-top-color: #daefd0;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    z-index: 200
+}
+
+.spinner__round--small {
+    width: 40px;
+    height: 40px
+}
+
+.toggle[type=checkbox]:active {
+    position: relative;
+    width: 43px;
+    height: 24px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-left: 10px;
+    border: 0 solid
+}
+
+.toggle[type=checkbox]:focus {
+    outline: none
+}
+
+.toggle[type=checkbox] {
+    position: relative;
+    width: 43px;
+    height: 24px;
+    -webkit-appearance: none;
+    background: #d5d5d5;
+    outline: none;
+    border-radius: 20px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-left: 10px;
+    border: 0 solid
+}
+
+.toggle[type=checkbox]:hover {
+    cursor: pointer
+}
+
+.toggle:checked[type=checkbox] {
+    background: #4b8c2a
+}
+
+.toggle:checked[type=checkbox]:before {
+    background: #fff
+}
+
+.toggle[type=checkbox]:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+.toggle:checked[type=checkbox]:before {
+    left: 21px
+}
+
+.switch {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.switch__button:focus {
+    outline: none
+}
+
+.switch__button {
+    background: #fff;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #d5d5d5;
+    color: gray;
+    padding: 6px 7px 5px;
+    min-width: 86px;
+    text-align: center;
+    background: #f4f4f4
+}
+
+.switch__button:hover {
+    background: #fff
+}
+
+.switch__button--active {
+    border: 0;
+    box-shadow: inset 0 0 0 2px #555;
+    color: #2b2b2b;
+    background: #fff
+}
+
+.switch__button:first-of-type {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px
+}
+
+.switch__button:last-of-type {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+
+.switch__button>span {
+    margin-left: 6px
+}
+
+.leaflet-control-zoom {
+    border-radius: 15px!important;
+    opacity: .9
+}
+
+.leaflet-control-zoom:hover {
+    opacity: 1
+}
+
+.leaflet-control-zoom-in,.leaflet-control-zoom-out {
+    color: #555!important;
+    height: 33px!important
+}
+
+.leaflet-control-zoom-in {
+    border-top-left-radius: 15px!important;
+    border-top-right-radius: 15px!important;
+    padding: 2px 0!important
+}
+
+.leaflet-control-zoom-out {
+    border-bottom-left-radius: 15px!important;
+    border-bottom-right-radius: 15px!important
+}
+
+.leaflet-control-fullscreen {
+    border-radius: 40px!important
+}
+
+.leaflet-control-fullscreen-button {
+    border-radius: 40px!important;
+    width: 36px!important;
+    height: 36px!important;
+    background-position: 5px 5px!important;
+    opacity: .9
+}
+
+.leaflet-control-fullscreen-button:hover {
+    opacity: 1
+}
+
+.leaflet-fullscreen-on .leaflet-control-fullscreen-button {
+    background-position: 5px -21px!important
+}
+
+.header {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #eee
+}
+
+.header,.header__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.header__content {
+    width: 100%;
+    padding: 12px 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center
+}
+
+.header__brand {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.header__logo-big {
+    display: inline-block;
+    width: 140px;
+    height: 30px
+}
+
+.header__search {
+    width: 100%;
+    min-width: 150px;
+    max-width: 450px;
+    margin-left: 30px
+}
+
+.header__explore {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 40px 0 10px;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.header__create {
+    margin-right: 20px;
+    margin-left: auto
+}
+
+.header__create,.header__create-button-big {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.header__create-button-big {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b8c2a;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #4b8c2a
+}
+
+.header__create-button-big:active,.header__create-button-big:focus {
+    color: #4b8c2a
+}
+
+.header__create-button-big-text {
+    margin-top: 1px;
+    margin-left: 10px;
+    white-space: nowrap
+}
+
+.header__create-button-big-icon-circle {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/upload.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    min-width: 30px;
+    min-height: 26px
+}
+
+.header__create-button-big:hover {
+    background-color: #4b8c2a;
+    color: #fff;
+    text-decoration: none
+}
+
+.header__create-button-big:hover>.header__create-button-big-icon-circle {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/upload-hover.svg)
+}
+
+.header__create-button-small {
+    display: none;
+    padding: 4px;
+    cursor: pointer
+}
+
+.header__create-button-small:hover {
+    color: #4b8c2a;
+    text-decoration: none
+}
+
+.header__create-button-small-icon-circle {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/upload.svg);
+    width: 42px;
+    height: 41px;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.header__create-button-mini-icon-circle {
+    display: none
+}
+
+.header__user,.header__user-guest {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center
+}
+
+.header__login {
+    color: #555;
+    padding: 0;
+    margin-right: 20px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.header__login:hover {
+    color: #555
+}
+
+.header__signup-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.header__signup-btn,.header__signup-btn-small {
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif
+}
+
+.header__signup-btn-small {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: -.2px;
+    text-align: center
+}
+
+.header__signup-btn-small>i {
+    font-size: 14px;
+    margin-bottom: -3px
+}
+
+@media(max-width: 1024px) {
+    .header__content {
+        padding:12px 20px
+    }
+
+    .header__create-button-big {
+        display: none
+    }
+
+    .header__create-button-small {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .header__create {
+        margin-right: 10px
+    }
+
+    .header__signup-btn {
+        display: none
+    }
+
+    .header__signup-btn-small {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .header__explore {
+        margin: 0 20px 0 10px
+    }
+}
+
+@media(max-width: 768px) {
+    .header__search {
+        width:30px;
+        min-width: unset;
+        margin-left: auto;
+        margin-right: 15px
+    }
+
+    .header__login {
+        display: none;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0
+    }
+
+    .header__explore {
+        margin: 0 15px 0 0
+    }
+
+    .header__explore-or {
+        display: none
+    }
+
+    .header__create {
+        margin-left: 0;
+        margin-right: 15px
+    }
+
+    .header__create-button-small-icon-circle {
+        display: none
+    }
+
+    .header__create-button-mini-icon-circle {
+        display: block;
+        background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/search/cloud_mobile.svg);
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: 50%
+    }
+}
+
+@media(max-width: 480px) {
+    .header__explore,.header__search {
+        margin-top:6px;
+        margin-right: 7px
+    }
+
+    .header__create {
+        margin-right: 7px;
+        margin-top: 4px
+    }
+
+    .header__create-button-small {
+        padding: 4px 4px 1px
+    }
+}
+
+@media(max-width: 360px) {
+    .header__logo-big {
+        width:120px;
+        height: 26px
+    }
+
+    .header__content {
+        padding: 12px 10px
+    }
+}
+
+.wikiloc-checkbox {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0!important;
+    padding-right: 12px
+}
+
+.wikiloc-checkbox>span:last-child {
+    padding-left: 12px
+}
+
+.wikiloc-checkbox input {
+    display: none
+}
+
+.wikiloc-checkbox span.green {
+    float: left!important;
+    border: 2px solid #bdbdbd;
+    height: 22px;
+    width: 22px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.wikiloc-checkbox input:checked:disabled+span.green {
+    border: 2px solid #bdbdbd;
+    background: #f4f4f4;
+    font-size: 22px
+}
+
+.wikiloc-checkbox input:checked+span.green {
+    border: 3px solid #4c8c2b;
+    background: #4c8c2b;
+    font-size: 22px
+}
+
+.wikiloc-checkbox input:checked:disabled+span.green:before {
+    content: "";
+    background-size: 33px 16px;
+    background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/icons/icon-check-gray.svg) no-repeat;
+    width: 16px;
+    height: 13px;
+    display: block
+}
+
+.wikiloc-checkbox input:checked+span.green:before {
+    content: "";
+    background-size: 33px 16px;
+    background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/icons/icon-check.svg) no-repeat;
+    width: 16px;
+    height: 13px;
+    display: block
+}
+
+.wikiloc-checkbox--radio span.green {
+    border-radius: 50%
+}
+
+@media(min-width: 1024px) {
+    .wikiloc-checkbox {
+        padding-top:0;
+        padding-bottom: 0;
+        padding-right: 0
+    }
+
+    .wikiloc-checkbox input:hover:not(:checked)+span.green:before {
+        content: "";
+        background-size: 33px 16px;
+        background: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/icons/icon-check.svg) no-repeat;
+        width: 16px;
+        height: 13px;
+        display: block;
+        opacity: 1%
+    }
+
+    .wikiloc-checkbox input:checked+span.green {
+        border: 3px solid #4c8c2b;
+        background: #4c8c2b;
+        font-size: 22px
+    }
+}
+
+.wikiloc-link,.wikiloc-link:active,.wikiloc-link:hover,.wikiloc-link:visited {
+    color: #4c8c2b
+}
+
+.font-13 {
+    font-size: 13px
+}
+
+.wikiloc-radio-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 6px;
+    margin: 10px 0 0
+}
+
+.wikiloc-radio-item input[type=radio] {
+    opacity: 0;
+    position: fixed;
+    width: 0
+}
+
+.wikiloc-radio-item label {
+    color: #666;
+    font-weight: 400
+}
+
+.wikiloc-radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 0 0 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid #004c97;
+    background-color: transparent
+}
+
+.wikiloc-radio-item label:after+input[type=radio]:checked {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    content: " ";
+    display: block;
+    background: #004c97
+}
+
+input[type=radio].wikiloc-radio {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #bdbdbd;
+    cursor: pointer
+}
+
+input[type=radio].wikiloc-radio:checked {
+    border: 2px solid #4b8c2a
+}
+
+input[type=radio].wikiloc-radio:before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%
+}
+
+input[type=radio].wikiloc-radio:checked:before {
+    background: #4b8c2a
+}
+
+.wikiloc-selector {
+    display: block;
+    width: 80%;
+    height: 34px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/icons/icon-dropdown.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 12px
+}
+
+.wikiloc-selector:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+select.wikiloc-selector {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.wikiloc-selector>option {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px 0 5px;
+    border-bottom: 1px solid #eee
+}
+
+.wikiloc-select {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.wikiloc-select select {
+    display: none
+}
+
+.wikiloc-select-selected {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto!important;
+    height: 34px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/icons/icon-dropdown.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 12px;
+    background-size: 14px 9px
+}
+
+.wikiloc-icon-upwards.wikiloc-select-selected {
+    background-image: url(https://sc.wklcdn.com/wikiloc/assets/styles/images/icons/icon-upwards.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 12px;
+    background-size: 14px 9px
+}
+
+.wikiloc-select-items div,.wikiloc-select-selected {
+    color: #4f4f4f;
+    cursor: pointer
+}
+
+.wikiloc-select-items {
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    background: #fff;
+    -webkit-filter: drop-shadow(0 2px 10px rgba(0,0,0,.15));
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,.15));
+    border-radius: 6px;
+    z-index: 99
+}
+
+.wikiloc-select-items>div {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid #eee;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 19px
+}
+
+.wikiloc-select-items>div:hover {
+    cursor: pointer;
+    background: #f4f4f4
+}
+
+.wikiloc-selected-hide {
+    display: none
+}

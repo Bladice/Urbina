@@ -1,0 +1,594 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gad Presidente Urbina</title>
+    <link  rel="icon"   href="{% static 'image/fpu.png' %}" type="image/png" />
+{# <link rel="stylesheet" href="https://sc.wklcdn.com/wikiloc/assets/styles/css/home.min.26a4cd48.css" type="text/css" /> #}
+    <link rel="stylesheet" href="{% static 'css/home.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/pictograms.min.css'%}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/wikiloc.min.css'%}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/wikiloc-v2.min.css'%}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/trailmap.min.css'%}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/clap.min.css'%}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/urbina.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cardslider.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+{#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">#}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+     <!-- cabecera -->
+     <header id="header-main">
+         <div class="container">
+             <div class="col-sx-12">
+                    <h1 class="title1-h1 text-center">Gobierno Autónomo Descentralizado Parroquial Presidente Urbina</h1>
+            </div>
+         </div>
+        <div class="container">
+
+            <div class="row lang-anchor">
+
+                <div class="col-xs-6 col-sm-5 col-md-4">
+                    {#   <a href="{% url 'urbina' %}" class="navbar-brand">Presidente Urbina</a> #}
+                    <a href="#" class="navbar-brand">Presidente Urbina</a>
+
+                </div>
+                <div class="col-xs-12 col-sm-6 sm-mln">
+{#                    <h1 class="title1-h1">"PRESIDENTE URBINA"</h1>#}
+                    <p class="bigger text">
+                        Un sitio para descubrir compartir rutas al aire libre a pie, bicicleta y de mucha otras actividades
+                    </p>
+                </div>
+                <div class="access-wrapper col-xm-12 col-sm-1 col-md-2">
+                    <!-- portal hay que activar -->
+{#                     <a href="{% url 'portal' %}">  #}
+{#                    <a href="{% url 'noticia_detail' 1 %}">#}
+{#                    <a href="{% url 'datoempresa' 1 %}">#}
+                        {# llama a la vista que carga datos de las empress #}
+{#                    <a href="{% url 'homeg' %}">a</a>#}
+                        <img src="{% static 'image/escudo.png' %}" alt="Presidente Urbina" width="100" height="110">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!--slider-->
+    <div id="trail-slider">
+        <div class="container">
+            <ul class="trail-nav clearfix">
+                {# {% url 'mtb' %} #}
+                <li id="act-li-0" class=""><a href="#" title="" data-id="80304" class="pictogram activity-2"><span>Rutas</span> Mountain Bike</a></li>
+                {# {% url 'downhill' %} #}
+                <li id="act-li-4" class=""><a href="#" title="" data-id="512152" class="pictogram activity-47"><span>Rutas</span> Cicloturismo</a></li>
+                {# {% url 'dhi' %} #}
+                <li id="act-li-10" class=""><a href="#" title="" data-id="" class="pictogram activity-117"><span>Rutas</span> Mountain bike</a></li>
+                {# {% url 'familia' %} #}
+                <li id="act-li-11" class=""><a href="#" title="" data-id="1095024" class="pictogram activity-144"><span>Rutas</span> Paseo familiar</a></li>
+                {# {% url 'infantil' %} #}
+                <li id="act-li-12" class=""><a href="#" title="" data-id="80304" class="pictogram activity-2"><span>Rutas</span> Paseo Infantil</a></li>
+                {# {% url 'gastronomia' %} #}
+                <li id="act-li-13" class=""><a href="#" title="" data-id="1095024" class="pictogram activity-99"><span>Rutas</span> Paseo</a></li>
+                {# {% url 'granjas' %} #}
+                <li id="act-li-14" class=""><a href="#" title="" data-id="1095024" class="pictogram activity-43"><span>Rutas</span> Paseo</a></li>
+                {# {% url 'ruta1' %} #}
+                <li id="act-li-14" class=""><a href="#" title="" data-id="1095024" class="pictogram activity-139"><span>Rutas</span> Paseo</a></li>
+                {# {% url 'portal' %} #}
+                <li id="mapa-activities"><a style="background-image: none;
+                    text-indent:0" href="#" title=""> <img src="{% static 'image/mapa.png' %}" alt=""></a></li>
+
+                <!--                <li id="act-li-5" class="">
+                    <a href="https://es.wikiloc.com/rutas/cicloturismo" title="<span>Rutas</span> Cicloturismo" data-id="257661" class="pictogram activity-47"><span>Rutas</span> Cicloturismo</a>
+                </li>
+                <li id="act-li-6" class="">
+                    <a href="https://es.wikiloc.com/rutas/cicloturismo" title="<span>Rutas</span> Cicloturismo" data-id="257661" class="pictogram activity-47"><span>Rutas</span> Cicloturismo</a>
+                </li>
+                <li id="act-li-7" class="">
+                    <a href="https://es.wikiloc.com/rutas/cicloturismo" title="<span>Rutas</span> Cicloturismo" data-id="257661" class="pictogram activity-47"><span>Rutas</span> Cicloturismo</a>
+                </li>-->
+{#                <li id="act-li-8" class=""><a href="{% url 'homeg' %}" title="" data-id="1095024"#}
+{#                                      class="pictogram activity-144"><span>Rutas</span> Paseo</a></li>#}
+            </ul>
+            <div id="slides">
+                <div id="trail-info" class="clearfix">
+                    <div class="trail-main">
+                        <span id="trail-activity">Downhill</span>
+                        <a href="https://es.wikiloc.com/rutas-a-caballo/ruta-del-rio-moro-1388192">Ruta desenso montaña</a>
+{#                        <h3 id="trail-name" class="long">#}
+{#                            <a id="trail-name-link" href="https://es.wikiloc.com/rutas-a-caballo/ruta-del-rio-moro-1388192">Ruta decenso Motaña</a>#}
+{#                            <a id="trail-name-link" href="#">Ruta decenso Motaña</a>#}
+{#                        </h3>#}
+                        <span id="trail-meta"><em>22 km</em>. Presidente Urbina, Pillaro (Ecuador)</span>
+                    </div>
+                    <div class="trail-user hidden-xs clearfix">
+                        <a href="/ wikiloc/user.do?id=50719" id="trail-user-photo" class="trail-user-link"><!--foto slider-->
+                           <!-- <img src="https://s1.wklcdn.com/image_1/50719/photo_tn.jpg" alt=""> -->
+                           <!--autor-->
+                        </a>
+                        <!--<span class="user-info">Autor<a href="/wikiloc/user.do?id=50719" id="trail-user-name" class="trail-user-link">Gad Parroquil '…</a></span>-->
+                        <span class="user-info">Autor<a href="#" id="trail-user-name" class="trail-user-link">Gad Parroquial '…</a></span>
+                    </div>
+                </div>
+                <div id="trail-photos" class="hidden-xs clearfix">
+
+                <!--    <a href="https://es.wikiloc.com/rutas-a-caballo/ruta-del-rio-moro-1388192/photo-458542">
+                        <img src="https://s1.wklcdn.com/image_1/50719/1388192/458542.120x90.jpg">
+                    </a> -->
+                    <a href="#">
+                        <img style="height: 90px; width: 120px;" src="{% static '/image/pt-01.jpg' %}">
+                    </a>
+                    <a href="#">
+                        <img style="height: 90px; width: 120px;" src="{% static '/image/pt-02.jpg' %}">
+                    </a>
+                    <a href="#">
+                        <img style="height: 90px; width: 120px;" src="{% static '/image/pt-03.jpg' %}">
+                    </a>
+                    <a href="#">
+                        <img style="height: 90px; width: 120px;" src="{% static '/image/pt-04.jpg' %}">
+                    </a>
+
+ <!--                   <a href="https://es.wikiloc.com/rutas-a-caballo/ruta-del-rio-moro-1388192/photo-458543">
+                        <img src="https://s2.wklcdn.com/image_1/50719/1388192/458543.120x90.jpg">
+                    </a>
+                    <a href="https://es.wikiloc.com/rutas-a-caballo/ruta-del-rio-moro-1388192/photo-458544">
+                        <img src="https://s0.wklcdn.com/image_1/50719/1388192/458544.120x90.jpg">
+                    </a>
+                    <a href="https://es.wikiloc.com/rutas-a-caballo/ruta-del-rio-moro-1388192/photo-458545">
+                        <img src="https://s1.wklcdn.com/image_1/50719/1388192/458545.120x90.jpg">
+                    </a> -->
+                </div>
+
+                <div id="previous-but" class="arrow previous">&nbsp;</div>
+                <div id="next-but" class="arrow next">&nbsp;</div>
+                <a id="map-logo" href="https://maps.google.com" target="_blank"></a>
+            </div>
+        </div>
+
+        <div class="mapoverlay mapleft"></div>
+        <!--<div id="imagemap" style="background-image: url(&quot;https://sc.wklcdn.com/homemap/1600732.jpg&quot;);"></div>-->
+    <!--    <div id="imagemap" style="background-image: url(&quot;{% static '/image/downhill.jpg' %}&quot;);"></div> -->
+    <div class="row">
+        <div class="col">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+{#                    #}
+{#                   <div class="carousel-item active"  style="background-image: url('/static/image/downhill.jpg'); width: 100%; height: vh100" > </div>#}
+{#                    <img src="/static/image/downhill.jpg" alt="">#}
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+        <div class="mapoverlay mapright"></div>
+        <div id="act-tool" class="activity-tooltip"></div>
+    </div>
+
+
+    <!--fin slider-->
+
+     <!-- contador -->
+     <div id="trail-counter">
+         <div class="container">
+             <div class="row">
+                 <div id="the-counter" class="col-sm-6 col-md-7 col-lg-6 hidden-xs">
+                    <div class="counter1">
+                        <img style="position: absolute; right: 5px; top: -65px;" class="jodometer_integer_0" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 1">
+                        <img style="position: absolute; right: 60px; top: -65px;" class="jodometer_integer_1" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 2">
+                        <img style="position: absolute; right: 115px; top: -65px;" class="jodometer_integer_2" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 3">
+                        <div style="position:absolute; width:10px; height:65px; background:url(https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2) no-repeat center bottom; right:170px;" class="jodometer_dot"></div>
+                        <img style="position: absolute; right: 185px; top: -65px;" class="jodometer_integer_3" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 4">
+                        <img style="position: absolute; right: 240px; top: -65px;" class="jodometer_integer_4" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 5">
+                        <img style="position: absolute; right: 295px; top: -65px;" class="jodometer_integer_5" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 6">
+                        <div style="position:absolute; width:10px; height:65px; background:url(https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2) no-repeat center bottom; right:350px;" class="jodometer_dot"></div>
+                        <img style="position:absolute; right:365px; top:-65px;" class="jodometer_integer_6" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 7">
+                        <img style="position: absolute; right: 420px; top: -65px;" class="jodometer_integer_7" src="https://sc.wklcdn.com/wikiloc/images/jodometer-numbers-dot.png?v=2" alt="Integer 8">
+
+                    </div>
+                 </div>
+                 <div id="bigintro" class="col-sm-12 col-md-5 col-lg-6">
+                     <p>Ahora somos mas de <<0>> visitantes que que nos integramos a descubrir la magia del territorio y su gente</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- fin contador -->
+<!-- informativo-->
+     <div class="container">
+         <div class="row row-top">
+             <div class="col-md-12">
+                 <h2 class="title-h2">Mensaje del Presidente GAD Parroquial</h2>
+             </div>
+         </div>
+         <div class="row container">
+             <div class="mobile-app clearfix col-md-12">
+                 <div class="row">
+                     <div class="mobile-app-column col-xs-12 col-sm-6 col-sm-push-6">
+                         <div class="row">
+                         <div class="col-md-12">
+{#                             <img class="img-responsive round-corner" src="{% static '/image/aut_pu.jpg' %}" alt="">#}
+{#                             slider de noticias#}
+                             <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                                 <div class="carousel-inner">
+
+                                     <div class="carousel-item active">
+                                         {# {% url 'noticia_detail' 1 %} #}
+                                         <a href="#"><img src="{% static 'image/foto4.jpg' %}" class="d-block w-100" alt="..."></a>
+
+                                         <div class="carousel-caption">
+                                             <h1>Noticia 1</h1>
+                                             <p>Primera Noticia</p>
+
+                                         </div>
+                                     </div>
+                                     <div class="carousel-item">
+                                         {# {% url 'noticia_detail' 1 %} #}
+                                         <a href="#"><img src="{% static 'image/pt-02.jpg' %}" class="d-block w-100" alt="..."></a>
+
+                                         <div class="carousel-caption">
+                                             <h1>Noticia 2</h1>
+                                             <p>Segunda Noticia</p>
+
+                                         </div>
+
+                                     </div>
+                                     <div class="carousel-item">
+                                         {# {% url 'noticia_detail' 1 %} #}
+                                         <a href="#"><img src="{% static 'image/foto6.jpg' %}" class="d-block w-100" alt="..."></a>
+
+                                         <div class="carousel-caption">
+                                             <h1> Noticia 3</h1>
+                                             <p>Tercera Noticia
+
+                                         </div>
+                                     </div>
+                                 </div>
+{#                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">#}
+{#                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+{#                                     <span class="visually-hidden">Previous</span>#}
+{#                                 </button>#}
+{#                                 <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">#}
+{#                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+{#                                     <span class="visually-hidden">Next</span>#}
+{#                                 </button>#}
+                             </div>
+
+{#fin de slider                      #}
+                         </div>
+                         </div>
+
+                         <!--<p class="text-center">
+                             <a class="btn btn-lg btn-warning" href="#">Visita Urbina</a>
+                         </p>-->
+                     </div>
+
+                     <div class="mobile-app-column  col-xs-12 col-sm-6 col-sm-pull-6">
+{#                         <div class="text">Mensaje a la Comunidad</div>#}
+                         <video src="{% static '/image/GadPUrbina.mp4' %}" width="420" height="300" controls autoplay muted>
+                         </video>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+{#   slider dinamico      #}
+         <div class="row row-top align-items-start">
+             <div class="slider owl-carousel">
+             {% if lugares %}
+
+                {% for lugar in lugares %}
+                 <div class="card">
+                     <div class="img"><img src="{{ lugar.foto.url }}" alt=""></div>
+                     <div class="content">
+                         <div class="title">{{ lugar.ruta.nombre }}</div>
+                         <div class="sub-title">{{ lugar.nombre }}</div>
+                         <p>{{ lugar.detalle|striptags|truncatechars:100 }} </p>
+                         <div class="btn">
+                             <a href="{% url 'datoempresa' lugar.id %}">
+                             <button>Visitanos..</button></a>
+                         </div>
+                     </div>
+                 </div>
+                 {% endfor %}
+             {% endif %}
+
+                 <div class="card">
+                     <div class="img"><img src="{% static '/image/granja/MVI-8.jpg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Granjas Agro Ecologicas</div>
+                         <div class="sub-title">Los Angeles</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static '/image/granja/or-1.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Granjas Agro Ecologicas</div>
+                         <div class="sub-title">Granja Don Ruiz</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/granja/la-6.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Granjas Agro Ecologicas</div>
+                         <div class="sub-title">Las Abejitas</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/granja/wr-4.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Granjas Agro Ecologicas</div>
+                         <div class="sub-title">Granja Gallinas Felices</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/granja/gr-2.jpg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Granjas Agro Ecologicas</div>
+                         <div class="sub-title">Los Geranios</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/granja/gl-6.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Granjas Agro Ecologicas</div>
+                         <div class="sub-title">Granja la Manzanita</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/gastro/lh-01.jpg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Gastronomia y Entretenimiento</div>
+                         <div class="sub-title">Paradero La Hueca</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/gastro/pt-04.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Gastronomia y Entretenimiento</div>
+                         <div class="sub-title">Paradero Los Toyos</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/gastro/pm-3.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Gastronomia y Entretenimiento</div>
+                         <div class="sub-title">Paradero Michita</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="card">
+                     <div class="img"><img src="{% static 'image/gastro/tb-4.jpeg' %}" alt=""></div>
+                     <div class="content">
+                         <div class="title">Gastronomia y Entretenimiento</div>
+                         <div class="sub-title">La Taberna</div>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+                         <div class="btn">
+                             <button>Visitanos..</button>
+                         </div>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+{#   fin slider      #}
+         <div class="row row-top align-items-start">
+             <div class="col-md-4">
+                 <div>
+                     <div class="wrap-title">
+                         <h2 class="title-h2">
+                             Granja Agro Ecologicas
+                         </h2>
+                     </div>
+                     {# {% url 'videogranja' %} #}
+                     <a href="#">
+                         <img class="img-responsive round-corner" src="{% static '/image/mvi_1.jpg' %}" alt="">
+                     </a>
+                     <div class="text" space-1m text-center>
+                         Granja ecologicas
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div>
+                     <div class="wrap-title">
+                         <h2 class="title-h2">
+                             Gastronomia y Entretenimiento
+                         </h2>
+                     </div>
+                     {# {% url 'videogastro' %} #}
+                     <a href="#">
+                         <img class="img-responsive round-corner" src="{% static '/image/pt-01.jpg' %}" alt="">
+{#                         <video src="{% static 'image/mtb.mp4' %}" width="360" height="240" controls></video>#}
+                     </a>
+                     <div class="text" space-1m text-center>
+                         Distraccion en Familia
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div>
+                     <div class="wrap-title">
+                         <h2 class="title-h2">
+                             Rutas Ciclisticas
+                         </h2>
+                     </div>
+                     {# {% url 'videociclismo' %} #}
+                     <a href="#">
+                         <img class="img-responsive  round-corner" src="{% static '/image/mont-02.jpg' %}" alt="">
+                     </a>
+                     <div class="text" space-1m text-center>
+                         Ciclismo
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+<!-- informativo-->
+
+     <!--footer-->
+
+<footer id="footer-main">
+    <div id="footer-nav" class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12">
+                <h2>Ruta Con Bicicleta</h2>
+                <div class="col-sm-12 col-xs-6 remove-padding-left">
+                    {# {% url 'familia' %} #}
+                    <a href="#">Ciclo Paseos</a>
+                </div>
+                <div class="col-sm-12 col-xs-6 remove-padding-left">
+                    {# {% url 'infantil' %} #}
+                    <a href="#">Paseo Infantil</a>
+                </div>
+                <div class="col-sm-12 col-xs-6 remove-padding-left">
+                    {# {% url 'dhi' %} #}
+                    <a href="#">Mountain Bike</a>
+                </div>
+                <div class="col-sm-12 col-xs-6 remove-padding-left">
+                    {# {% url 'downhill' %} #}
+                    <a href="#">DownHill</a>
+                </div>
+                <div class="col-sm-12 col-xs-6 remove-padding-left">
+                    {# {% url 'mtb' %} #}
+                    <a href="3">Mtb</a>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="col-sm-12 col-xs-6">
+                    <h2>Granjas Ecologicas</h2>
+                    <ul>
+                        <li><a href=""></a>Laurita</li>
+                        <li><a href=""></a>La Manzanita</li>
+                        <li><a href=""></a>Las Albejitas</li>
+                        <li><a href=""></a>Los Geranios</li>
+                        <li><a href=""></a>Willian Ruiz</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-12 col-xs-6">
+                    <h2>Restaurantes y Distracción</h2>
+                    <ul>
+                        <li><a href=""></a>Los Cuyes</li>
+                        <li><a href=""></a>La Taberna</li>
+                        <li><a href=""></a>Los Geranios</li>
+                        <li><a href=""></a>Paradero Garcia</li>
+                        <li><a href=""></a>Paradero Michita</li>
+                        <li><a href=""></a>Parque Los Tayos</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-4 col-xs-6">
+                    <h2>Emprendimientos</h2>
+                    <ul>
+{#                        <li><a href=""></a>1</li>#}
+{#                        <li><a href=""></a>2</li>#}
+{#                        <li><a href=""></a>3</li>#}
+{#                        <li><a href=""></a>4</li>#}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="{% static 'js/popper.min.js'%}" ></script>
+    <script src="{% static 'js/bootstrap.min.js'%}" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="{% static '/js/index.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+         $(".slider").owlCarousel({
+             loop: true,
+             autoplay: true,
+             lazyLoad: true,
+             merge: true,
+             video: true,
+            responsive: {
+                 480:{
+                     items:1
+                },
+                678:{
+                  items:2
+                },
+                960:{
+                     items: 3
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
